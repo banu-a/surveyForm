@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="C:\\xampp\htdocs\indexhtml\survey-form\surveyform.css">
+		<title>Survey Form</title>
+	</head>
+	
+	<body>
+       <h1 id="title">Survey Form</h1>
+     <div class="out-form">
+			<p id="description"><b>We do this 
+		survey not to collect your personal 
+		information, but privately to determine
+		user trends.</b></p>
+		</div>
+    <form id="survey-form" method="GET" 
+action="https://crossorigin.me/https://freecodecamp.com">
+		<div class="question">
+			<label id="name" for="name">*Name: </label>
+		</div>
+		
+		<div class="answer">
+		 <input autofocus type="text" name="name" id="name" 
+		 class="inputField" placeholder="Enter your name" required>
+		</div>
+	
+		<div class="question">
+			<label id="number" for="age">*Age: </label>
+		</div>
+		
+		<div class="answer">
+			<input type="number" name="age" id="number"
+			min="10" max="100" class="inputField" required
+			placeholder="Enter your age">
+		</div>
+		
+		<div class="question">
+			<label id="email" for="email">*Email: </label>
+		</div>
+		
+		<div class="answer">
+			<input type="email" name="email" id="email"
+			class="inputField" required
+			placeholder="Enter your email">
+		</div>
+		
+		<div class="question">
+			<label for="currentPos">Which option best
+			describes your current role?</label>
+		</div>
+		
+		<div class="answer">
+			<select id="dropdown" name="currentPos" 
+			class="dropdown inputField">
+				<option>Select an option</option>
+				<option value="student">Student</option>
+				<option value="job">Full time job</option>
+				<option value="learner">Full time learner</option>
+				<option value="preferNo">Prefer not to say</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+		
+		<div class="question">
+			<label for="userRating">How often do you make up?</label>
+		</div>
+		
+		<div class="answer">
+			<ul style="list-style:none;">
+				<li class="radio">
+				<label>Always
+					<input name="radioButtons" value="1" type="radio"
+					class="userRatings">
+				</label>
+				</li>
+				
+				<li class="radio">
+					<label>From time to time
+						<input name="radioButtons" value="2" type="radio"
+						class="userRatings">
+					</label>
+				</li>
+				
+				<li class="radio">
+					<label>Seldom
+						<input name="radioButtons" value="3" type="radio"
+						class="userRatings">
+					</label>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="question">
+			<label for="preference">Do you prefer cheap
+			or expensive of makeup products?</label>
+		</div>
+		
+		<div class="answer">
+			<ul style="list-style:none;">
+				<li class="radio">
+					<label>Cheap
+					<input name="radioButtons" value="1" type="radio"
+					class="userRatings">
+					</label>
+				</li>
+				
+				<li class="radio">
+					<label>Expensive
+					<input name="radioButtons" value="2" type="radio"
+					class="userRatings">
+					</label>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="question">
+			<label for="preferences">
+			 ..... unless it is makeup product/products, 
+			 this makeup will not", 
+			 you said; which it is product or products?
+			 <br>
+			 (Check all that apply):
+			</label>
+		</div>
+		
+		<div class="answer">
+			<ul id="preferences" style="list-style:none;">
+				<li class="checkbox">
+					<label>
+						<input name="prefer" value="1" type="checkbox"
+						class="userRatings">Make-up base
+					</label>
+				</li>
+				
+				<li class="checkbox">
+					<label>
+						<input name="prefer" value="2" type="checkbox"
+						class="userRatings">Foundation
+					</label>
+				</li>
+				
+				<li class="checkbox">
+					<label>
+						<input name="prefer" value="3" type="checkbox"
+						class="userRatings">Face-powder
+					</label>
+				</li>
+					
+				<li class="checkbox">
+					<label>
+						<input name="prefer" value="4" type="checkbox"
+						class="userRatings">Concealer
+					</label>
+				</li>
+				
+				<li class="checkbox">
+					<label>
+						<input name="prefer" value="5" type="checkbox"
+						class="userRatings">Mascara
+					</label>
+				</li>
+				
+				<li class="checkbox">
+					<label>
+						<input name="prefer" value="6" type="checkbox"
+						class="userRatings">Lipstick
+					</label>
+				</li>
+				
+				<li class="checkbox">
+					<label>
+						<input name="prefer" value="7" type="checkbox"
+						class="userRatings">Blusher
+					</label>
+				</li>
+				
+				<li class="checkbox">
+					<label>
+						<input name="prefer" value="8" type="checkbox"
+						class="userRatings">Eye shadow/Eyeliner
+					</label>
+				</li>
+				
+				<li class="checkbox">
+					<label>
+						<input name="prefer" value="9" type="checkbox"
+						class="userRatings">Eyebrow shadow/pencil
+					</label>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="question">
+			<label for="comments">Any comments or suggestions?</label>
+		</div>
+		
+		<div class="answer">
+			<textarea id="comments" class="inputField"
+			style="height:50px; resize:vertical;" name="comment"
+			placeholder="Enter your comment here ..."></textarea>
+		</div>
+		<br>
+		<button id="submit" type="submit">Submit</button>
+	 </form>
+
+ 
+	</body>
+</html>

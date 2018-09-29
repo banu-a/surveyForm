@@ -1,0 +1,131 @@
+html{
+	background-color:hsl(303, 99%, 76%);
+	text-align:center;
+	font-family:"Linux Biolinum G";
+	min-width:320px;
+	display:block;
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+	margin:8px;
+}
+
+body{
+	margin:0px auto;
+	display:block;
+	background-color:hsl(303, 99%, 92%);
+	border-radius:8px;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	box-shadow: 10px 8px 10px hsl(303, 99%, 92%);
+  -webkit-box-shadow:10px 8px 10px hsl(303, 99%, 92%);
+   -moz-box-shadow:10px 8px 10px hsl(303, 99%, 92%);
+   color:#00008c;
+	max-width:900px;
+	width:75%;
+	padding:10px;
+	padding-top:20px;
+	
+}
+
+h1{
+	display:block;
+	font-size:25px;
+	margin-block-start:0.67em;
+	margin-block-end:0.67em;
+}
+
+p{
+	display:block;
+	margin-block-start:1em;
+	margin-block-end:1em;
+	margin-inline-start:0px;
+	margin-inline-end:0px;
+	font-size:18px;
+}
+
+.question{
+	display:inline-block;
+	text-align:right;
+	width:40%;
+	padding:5px;
+	vertical-align:top;
+	margin-top:10px;
+	font-weight:bold;
+	font-size:18px;
+}
+
+.answer{
+    display: inline-block;
+    text-align: left;
+    width:48%;
+    vertical-align: middle;
+	padding:10px;
+	margin-top:5px;
+	
+}
+
+.inputField{
+	width:150px;
+	height:20px;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+}
+
+.dropdown{
+	height:35px;
+	margin-top:10px;
+}
+
+.radio, .checkbox{
+	position:relative;
+	left:-43px;
+	margin-left:10px;
+	display:block;
+	padding-bottom:10px;
+
+}
+.userRatings, input[type="checkbox"]{
+	float:left;
+	margin-right:5px;
+}
+
+input[type="radio" i]{
+	margin:3px 3px 0px 5px;
+}
+
+#submit{
+	background-color:hsl(303, 99%, 76%);
+	color:#00008c;
+	font-size:1em;
+	font-weight:bold;
+	height:40px;
+	width:100px;
+	text-align:center;
+	margin:10px;
+	border:0px solid;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+}
+
+@media screen, (min-width:300px) and (max-width:600px){  
+	.question{
+		text-align:left;
+		margin-left:10px;
+		width:70%;
+	}
+	
+	.answer{
+		width:70%;
+		margin-left:10px;
+		text-align:left;
+	}
+	
+	.inputField{
+		width:70%;
+		text-align:left;
+		margin-left:10px;
+	}
+}
